@@ -1,64 +1,75 @@
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
+import Row  from 'react-bootstrap/Row';
+
+
 
 function ContainerFluidExample() {
   return (
     <Container fluid className='link-section'>
       <Container className='wrapper'>
+      <Row className='row1'>
+<div className="share">
+<button className='share-btn'>
+  <img src='images/share.png'></img>
+</button>
+<button className='more-btn'>
+  <img src='images/more.png'></img>
+</button>
+</div>
         <div className="profile-section">
-     <div className="profile-img" id='profile__img'>
-      <img src="" alt="" srcset="" />
+     <div className="profile-img">
+      <img id='profile__img' src="images/pic.jpg" alt="" srcset="" />
+      
      </div>
-     <div className="socials">
-      <div className="social-links">
-        <h6>Twitter:</h6>
-      <a href="http://">@esteraj</a>
-      </div>
-      <div className="social-links">
-        <h6>Slack:</h6>
-      <a href="http://">name</a>
-      </div>
-     
+     <h5>Esther Ajuzieogu</h5>
+   
      </div>
-     </div>
-  {/*<Col className="col">
-     <a className='links' id='twitter' href="http://">Twitter link</a>
-   </Col>*/}
+  <Col>
+     <a className='links' id='twitter' href="https://twitter.com/esteraj__"  target='_blank'>Twitter</a>
+   </Col>
+   <Col className="slack-name">
+     <a  id='slack' href="http://slack.com/esteraj" target='_blank'>Slack</a>
+   </Col>
    <Col>
-     <a id='btn__zuri' href="https://training.zuri.team">Zuri team</a>
+     <a id='btn__zuri' href="https://training.zuri.team" target='_blank' alt='join zuri'>Zuri team</a>
      </Col>
      <Col>
-     <a id='books' href="https://books.zuri.team">Zuri books</a>
+     <a id='books' href="https://books.zuri.team" title='Find books related to design and coding' target='_blank'>Zuri books</a>
      </Col>
      <Col>
-     <a id='book_python' href="https://books.zuri.team/python-for-beginners?
-     ref_id=<yourslackname>">Python books</a>
+     <a id='book__python' href="https://books.zuri.team/python-for-beginners
+   " target='_blank'>Python books</a>
      </Col>
      <Col>
-     <a id='pitch' href="https://background.zuri.team">Background check for coders</a>
+     <a id='pitch' href="https://background.zuri.team" target='_blank'>Background check for coders</a>
      </Col>
      <Col>
-     <a href="https://books.zuri.team/design-rules">Design books</a>
+     <a id='book__design' href="https://books.zuri.team/design-rules" target='_blank'>Design books</a>
      </Col>
-    
+     </Row>
+     <Row className='row-icons'>
+     <Col>
+     <div className='icons'>
+      <a href="https://slack.com/esteraj">
+      <img src="images/img5.png" alt="" srcset="" />
+      </a>
+      <a href="https://github.com/Esther-Aj"><img src="images/img6.png" alt="" srcset="" />
+      </a>
+      
+      </div>
+      </Col>
+     </Row>
+     </Container>
+     <Container fluid className='footer'>
+      <Col lg={2} className="footer-content"><img src="/images/img4.png" alt="" srcset="" /></Col>
+      <Col lg={8} className="footer-content"><p className='hng'>HNG Internship 9 Frontend Task</p></Col>
+      <Col lg={2} className="footer-content"><img src=    "/images/img3.png" alt="" srcset="" /></Col>
+ 
      </Container>
     </Container>
   );
-   /*<Col>
-     <a href="http://">Zuri team</a>
-     </Col>
-     <Col>
-     <a href="http://">Zuri books</a>
-     </Col>
-     <Col>
-     <a href="http://">Python books</a>
-     </Col>
-     <Col>
-     <a href="http://">Background check for coders</a>
-     </Col>
-     <Col>
-     <a href="http://">Design books</a>
-     </Col>*/
+   
 }
 
 export default ContainerFluidExample;

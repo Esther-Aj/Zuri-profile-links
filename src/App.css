@@ -3,29 +3,42 @@
 .profile-img{
   width:150px;
   height: 150px;
-  background-color: green;
   border-radius: 50%;
   margin: auto;
   margin-bottom: 40px;
+ 
+}
+.profile-img img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid rgb(150, 150, 150);
+}
+.profile-section{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.share{
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+.share button{
+  outline:none;
+  border: none;
+  background-color: white;
+  border-radius: 50%;
 }
 .wrapper{
   background-color: white;
-  padding:100px 0px;
+  padding:50px 0px;
 }
 
-/*.col{
- background-color: rgb(201, 201, 201);
- margin-bottom: 30px;
- display: flex;
-justify-content: center;
-padding:20px 0px;
-border-radius: 4px;
-}*/
-.col a{
+.row1 a{
   color:black;
   text-decoration: none;
   font-weight: 500;
-  background-color: rgb(204, 204, 204);
+  background-color: rgb(236, 236, 236);
   padding:20px;
   width:100%;
   border-radius: 5px;
@@ -44,19 +57,112 @@ border-radius: 4px;
   justify-content: center;
   margin-bottom: 30px;
 }
-.social-links{
+
+.row{
+  display:flex;
+  flex-direction: column;
+
+
+}
+#books{
   display: flex;
-  justify-content: center;
-
-}
-.social-links a{
-  text-decoration: none;
-  margin-left: 10px;
-}
-.socials{
-  margin-bottom: 30px;
+  flex-direction: column;
 }
 
+
+
+  
+.footer{
+  border-top: 2px solid rgb(182, 182, 182);
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+ 
+}
+.icons a{
+  background-color: white !important;
+  
+}
+
+.footer :nth-child(3) img{
+width:60%;
+
+}
+.footer :nth-child(1) img{
+  width:70%;
+}
+.footer-content{
+  display: flex;
+justify-content: center !important;
+align-items: center !important;
+}
+.hng{
+  color:grey;
+  font-weight: 500;
+  font-size: 20px;
+}
+.slack-name{
+  display:none;
+}
+.icons :nth-child(1){
+  margin-right: 20px;
+}
+
+
+@media  screen and (min-width:1000px){
+.more-btn{
+  display: none;
+}
+.share-btn{
+ display: block;
+}
+}
+@media  screen and (max-width:1001px){
+  .share-btn{
+    display: none;
+   }
+}
+@media  screen and (min-width:800px)and (max-width:991px){
+  .footer :nth-child(1) img{
+    width:200px;
+  }
+  .footer :nth-child(3) img{
+    width:200px;
+  }
+  .footer{
+    flex-direction: column;
+  }
+}
+@media  screen and (max-width:860px) {
+  
+  .footer{
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .footer :nth-child(3) img{
+    width:150px;
+    
+    }
+    .footer :nth-child(1) img{
+      width:150px;
+    }
+    .footer-content{
+      display: flex;
+    justify-content: left !important;
+    }
+    .footer :nth-child(1),  .footer :nth-child(2),  .footer :nth-child(3){
+      margin-bottom: 10px !important;
+    }
+   
+}
+@media  screen and (max-width:760px){
+  .share-btn{
+    display: none;
+  
+  }
+}
 
 
 
